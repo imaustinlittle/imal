@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Homelab Rack | Austin Little</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header
+        class="fixed top-0 w-full z-50 py-4 transition-all duration-300 bg-surface/95 backdrop-blur-md border-b border-white/10"
+        id="header">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/"
+                class="text-text-secondary hover:text-primary transition-colors flex items-center gap-2 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+                Back to Home
+            </a>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <!-- Hero -->
+        <section class="container mx-auto px-6 mb-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold font-display mb-6 animate-fade-up">The Homelab Rack</h1>
+            <p class="text-xl text-text-secondary max-w-3xl mx-auto animate-fade-up" style="animation-delay: 0.1s;">
+                The central nervous system of my digital life. A 42U enterprise-grade setup focusing on redundancy,
+                compute power, and AI experimentation.
+            </p>
+        </section>
+
+        <!-- Main Overview Image -->
+        <section class="container mx-auto px-6 mb-24">
+            <div class="rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                <img src="/homelab-rack.svg" alt="Full Rack Setup" class="w-full object-cover aspect-video">
+            </div>
+        </section>
+
+        <!-- Specifications Grid -->
+        <section class="container mx-auto px-6 mb-24">
+            <h2 class="section-title text-center block mx-auto">Infrastructure Breakdown</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mt-12">
+                <!-- Compute -->
+                <div class="space-y-8">
+                    <div class="bg-surface p-8 rounded-lg border border-white/5">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Compute Node 1: Dell R730</h3>
+                        <p class="text-text-secondary mb-4">The media powerhouse.</p>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>OS:</strong> Unraid
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Role:</strong> Plex Media Server & Management
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Acceleration:</strong> 2x Nvidia Tesla P40 (24GB VRAM each)
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Use Case:</strong> Large Language Models (LLMs) & AI Projects
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-surface p-8 rounded-lg border border-white/5">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Compute Node 2: Dell R730XD</h3>
+                        <p class="text-text-secondary mb-4">Storage and general purpose compute.</p>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>OS:</strong> Unraid
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Role:</strong> Network Video Recorder (NVR)
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Containerization:</strong> Docker Host (Experimental/General)
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Storage:</strong> High-density 12-bay configuration
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Specialized & Network -->
+                <div class="space-y-8">
+                    <div class="bg-surface p-8 rounded-lg border border-white/5">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">AI Workstation Node</h3>
+                        <p class="text-text-secondary mb-4">Custom-built high-performance rig.</p>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>OS:</strong> Ubuntu Server
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>GPU:</strong> Nvidia Quadro RTX 5000
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Primary Task:</strong> Hardware Transcoding
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Secondary Task:</strong> AI Model Training & Experimentation
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-surface p-8 rounded-lg border border-white/5">
+                        <h3 class="text-2xl font-bold mb-4 text-primary">Networking & Core</h3>
+                        <p class="text-text-secondary mb-4">The backbone of the operation.</p>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Rack:</strong> 42U Dell Enterprise Rack
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Switching:</strong> TP-Link Omada SDN
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                                <strong>Routing:</strong> OPNsense (Virtualize/Physical)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold font-display mb-12">Gallery</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div
+                    class="aspect-square bg-surface rounded-lg border border-white/5 flex items-center justify-center relative overflow-hidden group">
+                    <div class="project-placeholder w-full h-full"></div>
+                    <div
+                        class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="font-bold">Cable Management</span>
+                    </div>
+                </div>
+                <div
+                    class="aspect-square bg-surface rounded-lg border border-white/5 flex items-center justify-center relative overflow-hidden group">
+                    <div class="project-placeholder w-full h-full"></div>
+                    <div
+                        class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="font-bold">R730 Internals</span>
+                    </div>
+                </div>
+                <div
+                    class="aspect-square bg-surface rounded-lg border border-white/5 flex items-center justify-center relative overflow-hidden group">
+                    <div class="project-placeholder w-full h-full"></div>
+                    <div
+                        class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="font-bold">Network Patch Panel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-8 border-t border-white/10 mt-auto">
+        <div class="container mx-auto px-6 text-center text-text-placeholder text-sm">
+            &copy; 2025 Austin Little. Built with Vite.
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

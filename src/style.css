@@ -109,8 +109,16 @@ img {
   justify-content: center;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-8 {
@@ -213,6 +221,14 @@ img {
   height: 1rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -273,6 +289,10 @@ img {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .mt-auto {

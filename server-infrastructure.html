@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Server Infrastructure | Austin Little</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header
+        class="fixed top-0 w-full z-50 py-4 transition-all duration-300 bg-surface/95 backdrop-blur-md border-b border-white/10"
+        id="header">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/"
+                class="text-text-secondary hover:text-primary transition-colors flex items-center gap-2 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+                Back to Home
+            </a>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <!-- Hero -->
+        <section class="container mx-auto px-6 mb-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold font-display mb-6 animate-fade-up">Server Infrastructure</h1>
+            <p class="text-xl text-text-secondary max-w-3xl mx-auto animate-fade-up" style="animation-delay: 0.1s;">
+                The logical layer powering the hardware. A blend of virtualization, containerization, and
+                high-performance computing.
+            </p>
+        </section>
+
+        <!-- Main Overview Image -->
+        <section class="container mx-auto px-6 mb-24">
+            <div class="rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                <img src="/server-infrastructure.svg" alt="Server Dashboard" class="w-full object-cover aspect-video">
+            </div>
+        </section>
+
+        <!-- Full Stack Breakdown -->
+        <section class="container mx-auto px-6 mb-24">
+            <h2 class="section-title text-center block mx-auto">The Software Stack</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mt-12">
+                <!-- Media & Acquisition -->
+                <div class="bg-surface p-8 rounded-lg border border-white/5 space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="p-3 bg-primary/10 rounded-lg text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold">Media Pipeline</h3>
+                    </div>
+                    <p class="text-text-secondary">
+                        Hosted primarily on the <strong>Dell R730 (Unraid)</strong>. This node manages the entire
+                        lifecycle of media acquisition and delivery.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                            <span class="text-text-secondary"><strong>Plex Media Server:</strong> The core application
+                                for streaming content locally and remotely.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                            <span class="text-text-secondary"><strong>Automation:</strong> Full *Arr stack integration
+                                for seamless content management.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                            <span class="text-text-secondary"><strong>Transcoding:</strong> Hardware accelerated by
+                                Nvidia GPUs for buffering-free 4K streams.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Storage & NVR -->
+                <div class="bg-surface p-8 rounded-lg border border-white/5 space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="p-3 bg-secondary/10 rounded-lg text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold">Storage & Security</h3>
+                    </div>
+                    <p class="text-text-secondary">
+                        Powered by the <strong>Dell R730XD (Unraid)</strong>. This High-Density storage server acts as
+                        the secure vault for data and physical security.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+                            <span class="text-text-secondary"><strong>Unraid Array:</strong> 12-bay configuration
+                                providing massive redundant storage capacity.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+                            <span class="text-text-secondary"><strong>Network Video Recorder:</strong> Dedicated 24/7
+                                recording endpoint for security cameras.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+                            <span class="text-text-secondary"><strong>Docker Laboratory:</strong> A sandbox environment
+                                for spinning up experimental services and tools.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- AI & Compute -->
+                <div class="md:col-span-2 bg-surface p-8 rounded-lg border border-white/5 space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="p-3 bg-purple-500/10 rounded-lg text-purple-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold">Artificial Intelligence & Compute</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-text-secondary mb-4">
+                                <strong>Workstation Node (Ubuntu)</strong><br>
+                                Equipped with an <strong>Nvidia Quadro RTX 5000</strong>. This system handles the heavy
+                                lifting for AI model training and complex data processing tasks.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-text-secondary mb-4">
+                                <strong>Inference Node (R730)</strong><br>
+                                Leveraging dual <strong>Nvidia Tesla P40s</strong> (48GB Total VRAM) to host and query
+                                Large Language Models (LLMs) locally, ensuring data privacy and low latency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-8 border-t border-white/10 mt-auto">
+        <div class="container mx-auto px-6 text-center text-text-placeholder text-sm">
+            &copy; 2025 Austin Little. Built with Vite.
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

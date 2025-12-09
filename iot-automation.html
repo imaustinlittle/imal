@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IoT & Home Automation | Austin Little</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header
+        class="fixed top-0 w-full z-50 py-4 transition-all duration-300 bg-surface/95 backdrop-blur-md border-b border-white/10"
+        id="header">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/"
+                class="text-text-secondary hover:text-primary transition-colors flex items-center gap-2 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+                Back to Home
+            </a>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <!-- Hero -->
+        <section class="container mx-auto px-6 mb-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold font-display mb-6 animate-fade-up">The Smart Home Brain</h1>
+            <p class="text-xl text-text-secondary max-w-3xl mx-auto animate-fade-up" style="animation-delay: 0.1s;">
+                A privacy-first, fully local home automation ecosystem. Centered around Home Assistant and dedicated
+                hardware control layers.
+            </p>
+        </section>
+
+        <!-- Main Overview Image -->
+        <section class="container mx-auto px-6 mb-24">
+            <div class="rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                <img src="/iot-automation.svg" alt="Automation Dashboard" class="w-full object-cover aspect-video">
+            </div>
+        </section>
+
+        <!-- Architecture Breakdown -->
+        <section class="container mx-auto px-6 mb-24">
+            <h2 class="section-title text-center block mx-auto">System Architecture</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mt-12">
+                <!-- Hardware Layer -->
+                <div class="bg-surface p-8 rounded-lg border border-white/5 space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="p-3 bg-secondary/10 rounded-lg text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold">Hardware Controller</h3>
+                    </div>
+                    <p class="text-text-secondary">
+                        The physical foundation ensuring reliable, low-latency execution of automations.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="p-4 bg-surface-secondary rounded border border-white/5">
+                            <h4 class="font-bold text-primary mb-1">Compute: Intel NUC</h4>
+                            <p class="text-sm text-text-secondary">Dedicated small-form-factor PC providing ample
+                                processing power for real-time logic without the overhead of heavy servers.</p>
+                        </div>
+                        <div class="p-4 bg-surface-secondary rounded border border-white/5">
+                            <h4 class="font-bold text-primary mb-1">Radio: Nabu Casa Connectivity</h4>
+                            <p class="text-sm text-text-secondary">Dual USB radio stick integration providing native
+                                communication with separate Zigbee and Z-Wave mesh networks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Layer -->
+                <div class="bg-surface p-8 rounded-lg border border-white/5 space-y-6">
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="p-3 bg-primary/10 rounded-lg text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold">The Brain (Software)</h3>
+                    </div>
+                    <p class="text-text-secondary">
+                        Run by <strong>Home Assistant</strong>. The open-source platform that unifies all devices into a
+                        single control plane.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                            <span class="text-text-secondary"><strong>Local Control:</strong> All logic is processed
+                                on-device. No cloud dependencies means automations work even when the internet is
+                                down.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                            <span class="text-text-secondary"><strong>Complex Logic:</strong> Utilizing Node-RED
+                                alongside native automations to handle multi-conditional scenarios.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                            <span class="text-text-secondary"><strong>Unified Dashboards:</strong> Custom UI for tablet
+                                and mobile control of lights, climate, and media.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protocols Grid -->
+        <section class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="p-6 bg-surface rounded-lg border border-white/5">
+                    <h3 class="text-xl font-bold mb-2">Zigbee</h3>
+                    <p class="text-sm text-text-secondary">Used for battery-powered sensors (Temp, Motion) and lights.
+                        Fast mesh networking.</p>
+                </div>
+                <div class="p-6 bg-surface rounded-lg border border-white/5">
+                    <h3 class="text-xl font-bold mb-2">Z-Wave</h3>
+                    <p class="text-sm text-text-secondary">Used for critical infrastructure like door locks,
+                        thermostats, and in-wall switches. Better range and reliability.</p>
+                </div>
+                <div class="p-6 bg-surface rounded-lg border border-white/5">
+                    <h3 class="text-xl font-bold mb-2">WiFi (Local)</h3>
+                    <p class="text-sm text-text-secondary">Used for high-bandwidth devices like cameras and media
+                        players, confined to a separate IoT VLAN.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-8 border-t border-white/10 mt-auto">
+        <div class="container mx-auto px-6 text-center text-text-placeholder text-sm">
+            &copy; 2025 Austin Little. Built with Vite.
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
