@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Austin Little | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="fixed top-0 w-full z-50 transition-all duration-300" id="header">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="md:hidden text-text-primary" id="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-surface/95 backdrop-blur-md absolute top-full left-0 w-full p-6 border-b border-white/10"
+            id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl">
+                    <h1 class="text-5xl md:text-7xl font-bold font-display leading-tight mb-6 animate-fade-up"
+                        style="animation-delay: 0.1s;">
+                        <span class="text-text-primary">Hello!</span><br>
+                        I'm <span class="text-primary-gradient">Austin Little</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-text-secondary mb-4 max-w-3xl animate-fade-up"
+                        style="animation-delay: 0.2s;">
+                        I build, break, and innovate with technology — from enterprise systems to home labs.
+                    </p>
+                    <p class="text-lg text-primary font-bold mb-10 animate-fade-up" style="animation-delay: 0.25s;">
+                        Tech Enthusiast • Systems & Network Specialist • Automation Junkie
+                    </p>
+                    <div class="flex gap-4 animate-fade-up" style="animation-delay: 0.3s;">
+                        <a href="#projects" class="btn btn-primary">Check Out My Lab</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-surface-secondary">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center block mx-auto">Skills & Expertise</h2>
+
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <!-- Column 1 -->
+                    <div
+                        class="bg-surface p-8 rounded-lg border border-white/5 hover:border-primary/30 transition-colors text-center">
+                        <div class="text-primary mb-6 flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 5.472m0 0a9.095 9.095 0 00-3.279 5.918c.099.01.199.02.299.027A11.944 11.944 0 0112 21c2.17 0 4.207-.576 5.963-1.584.1-.007.2-.018.299-.028zM12 15a3 3 0 100-6 3 3 0 000 6z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Leadership & Management</h3>
+                        <ul class="text-text-secondary space-y-2 text-sm">
+                            <li>Technical Team Leadership</li>
+                            <li>Process Improvement</li>
+                            <li>White-Glove Service Culture</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div
+                        class="bg-surface p-8 rounded-lg border border-white/5 hover:border-primary/30 transition-colors text-center">
+                        <div class="text-primary mb-6 flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.212 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Operations & Automation</h3>
+                        <ul class="text-text-secondary space-y-2 text-sm">
+                            <li>API Integrations</li>
+                            <li>Cloudflare Zero Trust</li>
+                            <li>Home Assistant / IoT Automation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div
+                        class="bg-surface p-8 rounded-lg border border-white/5 hover:border-primary/30 transition-colors text-center">
+                        <div class="text-primary mb-6 flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Infrastructure & Administration</h3>
+                        <ul class="text-text-secondary space-y-2 text-sm">
+                            <li>Device Security & Compliance (ITIL / HIPAA / HITECH)</li>
+                            <li>Azure / Intune</li>
+                            <li>Windows Server Administration</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Recent Projects</h2>
+                <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Projects will be injected here via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-surface-secondary">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-center">Get In Touch</h2>
+                <p class="text-xl text-text-secondary mb-10 max-w-2xl mx-auto">
+                    Have a project in mind or just want to say hi? I'm always open to discussing new opportunities.
+                </p>
+                <a href="mailto:hello@example.com" class="btn btn-primary text-lg">Say Hello</a>
+
+                <div class="mt-16 flex justify-center gap-8">
+                    <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 border-t border-white/10 mt-auto">
+        <div class="container mx-auto px-6 text-center text-text-placeholder text-sm">
+            &copy; 2025 Austin Little. Built with Vite.
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
