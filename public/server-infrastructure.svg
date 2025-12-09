@@ -1,0 +1,7 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#1e293b"/>
+  <rect x="250" y="150" width="100" height="100" rx="10" stroke="#14b8a6" stroke-width="4"/>
+  <circle cx="280" cy="180" r="10" fill="#14b8a6"/>
+  <path d="M260 230 L290 200 L310 220 L330 200 L340 210 V240 H260 V230 Z" fill="#14b8a6"/>
+  <text x="300" y="290" font-family="sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Server Infrastructure</text>
+</svg>
