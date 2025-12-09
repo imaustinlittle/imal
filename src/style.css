@@ -644,3 +644,9 @@ header.scrolled {
     filter: drop-shadow(0 0 0 rgba(6, 182, 212, 0));
   }
 }
+
+/* Hero Fixes for Stuck JIT */
+.hero-spacer {
+  margin-bottom: 2rem !important;
+  /* Final adjusted margin */
+}
